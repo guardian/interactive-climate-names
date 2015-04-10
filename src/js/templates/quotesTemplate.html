@@ -1,0 +1,23 @@
+<% if (quote.type == 'quote') { %>
+	<div class="quote">
+		<span class="text"><%= quote.quote %></span>
+		<div class="name"><span class="orange"><%= quote.name %></span><% if (quote.attribute != '') { %>, <%= quote.attribute %><% } %></div>
+	</div>
+<% } %>
+<% if (quote.type == 'comment') { %>
+	<div class="comment">
+		<span class="text"><%= quote.quote %></span>
+		<div class="name"><span class="orange"><%= quote.name %></span>, Guardian Commenter</div>
+	</div>
+<% } %>
+<% if (quote.type == 'endorsement') { %>
+	<div class="endorsement">
+		<span class="text"><%= quote.quote %></span>
+		<div class="name"><span class="orange"><%= quote.name %></span>, <%= quote.attribute %></div>
+	</div>
+<% } %>
+<% if (quote.type == 'snappy') { %>
+	<div class="snappy">
+		<span class="text"><%= quote.quote %></span>
+	</div>
+<% } %>

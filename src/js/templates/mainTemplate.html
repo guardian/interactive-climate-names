@@ -1,0 +1,48 @@
+<div class="header">
+	<div class="header-wrapper">
+		<div class="main logo-wrapper hide-mobile"><a href="http://www.theguardian.com/environment/series/keep-it-in-the-ground?INTCMP=keepinground-series-page" data-link-name="keepinground-series-page" target="_blank"><img id="logo" src="http://interactive.guim.co.uk/2015/03/climate-change-campaign/assets-1427122337655/imgs/logo_white.png"/></a></div>
+		<div class="main logo-wrapper show-mobile"><a href="http://www.theguardian.com/environment/series/keep-it-in-the-ground?INTCMP=keepinground-series-page" data-link-name="keepinground-series-page" target="_blank"><img id="logo" src="http://interactive.guim.co.uk/2015/03/climate-change-campaign/assets-1427122337655/imgs/logo.png"/></a></div>
+		<img id="header-image" src="http://interactive.guim.co.uk/2015/03/climate-change-campaign/assets-1427122337655/imgs/header2.png"/>
+	</div>
+
+	<div class="main main--top" style="padding-top: <%= ($(window).width() > 1500) ? 305 : $(window).width()/4.92 %>px">
+		<div class="content-int">
+			<h1><%= headerData.headline %></h1>
+			<h2><%= headerData.subheading %></h2>
+			<hr/>
+			<h3><%= headerData.shareheading %></h3>
+			<div class="social-int">
+				<a href="https://twitter.com/intent/tweet?text=<%= encodeURIComponent(headerData.twittertext) %>&url=http://gu.com/p/47b7h/stw" target="_blank" class="social-icon-int twitter" data-link-name="social twitter climate-names"><i class="big"></i><span class="share-text-int big">Tweet your support</span></a>
+			</div>
+			<div class="petition">
+				<%= headerData.petition %>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="main">
+	<div class="content-int signatures" id="signatures">
+	</div>
+</div>
+
+<div class="sticky-bar" id="sticky-bar">
+	<div class="main fade">
+
+	</div>
+	<div class="inner">
+		<div class="main">
+			<div class="content-int">
+				<div class="counter">
+					<span class="count-text">You've scrolled past</span>
+					<span id="count">0</span>
+					<span class="count-text">signatures</span>
+				</div>
+				<span class="sticky--text"><%= headerData.shareheading %></span>
+				<div class="social-int">
+					<a href="https://twitter.com/intent/tweet?text=<%= encodeURIComponent(headerData.twittertext) %>&url=http://gu.com/p/47b7h/stw" target="_blank" class="social-icon-int twitter" data-link-name="social twitter climate-names"><i></i><span class="share-text-int">Tweet your support</span></a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
